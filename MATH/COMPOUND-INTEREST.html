@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Compound Interest - General Information</title>
+	<style>
+		* {margin: 0; padding: 0; box-sizing: border-box;}
+		body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			  line-height: 1.6;
+			  color: #820000;
+			  background: linear-gradient(135deg, #7b0e0e 0%, #9d000d 100%);
+			  min-height: 100vh;}
+		nav {background-color: rgba(43, 0, 0, 0.8); padding: 1rem 0; position: sticky; top: 0; z-index:100;}
+		nav a {color:#d78282; text-decoration:none; padding:0.5rem 1.5rem; margin:0 0.5rem; display:inline-block; border-radius:4px; transition: background-color 0.3s;}
+		nav a:hover {background-color:#4d0606;}
+		header {background-color:#f8d5d5; padding:2rem; text-align:center; box-shadow:0 2px 10px rgba(0,0,0,0.1);}
+		header h1 {color:#ea6666; font-size:2.5rem; margin-bottom:0.5rem;}
+		header p {color:#666; font-size:1.1rem;}
+		.container {max-width:1000px; margin:2rem auto; padding:0 1rem;}
+		section {background-color:#f1bebe; margin-bottom:2rem; padding:2rem; border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,0.1);}
+		section h2 {color:#c74b4b; margin-bottom:1rem; border-bottom:3px solid #c0556d; padding-bottom:0.5rem;}
+		section h3 {color:#752727; margin-top:1.5rem; margin-bottom:0.5rem;}
+		.formula {background-color:#f5f5f5; padding:1rem; border-left:4px solid #c66969; margin:1rem 0; font-family:'Courier New', monospace; font-size:1.05rem; overflow-x:auto;}
+		.example {background-color:#e8f4f8; padding:1rem; border-left:4px solid #a24b52; margin:1rem 0; border-radius:4px;}
+		.example strong {color:#8e3939;}
+		ul, ol {margin-left:2rem; margin-top:0.5rem; margin-bottom:1rem;}
+		li {margin-bottom:0.5rem;}
+		table {width:100%; border-collapse:collapse; margin:1rem 0;}
+		table th, table td {border:1px solid #ddd; padding:0.75rem; text-align:left;}
+		table th {background-color:#dc7777; color:white;}
+		table tr:nth-child(even) {background-color:#f9f9f9;}
+		footer {background-color:rgba(0,0,0,0.8); color:#fff; text-align:center; padding:1.5rem; margin-top:2rem;}
+	</style>
+</head>
+<body>
+	<nav>
+		<a href="PERCENTAGES.html">Percentages</a>
+		<a href="SIMPLE-INTEREST.html">Simple Interest</a>
+		<a href="COMPOUND-INTEREST.html">Compound Interest</a>
+	</nav>
+
+	<header>
+		<h1>General Information About Compound Interest</h1>
+		<p>Compound interest: growth that reinvests earned interest over time</p>
+	</header>
+
+	<div class="container">
+		<section>
+			<h2>What Is Compound Interest?</h2>
+			<p>Compound interest is interest calculated on the initial principal and also on the accumulated interest of previous periods. This causes the investment or loan balance to grow at an increasing rate over time.</p>
+			<p style="margin-top:1rem;">Compound interest is widely used in savings, investments, loans, and many financial instruments.</p>
+		</section>
+
+		<section>
+			<h2>Core Formulas</h2>
+			<h3>Periodic Compounding</h3>
+			<div class="formula">A = P × (1 + r/n)^(n × t)
+			<br>where P = principal, r = annual rate (decimal), n = compounding periods per year, t = years</div>
+
+			<h3>Continuous Compounding</h3>
+			<div class="formula">A = P × e^(r × t)</div>
+
+			<div class="example">
+				<strong>Example:</strong> $2,000 at 6% compounded quarterly for 5 years:<br>
+				A = 2000 × (1 + 0.06/4)^(4×5) = 2000 × (1 + 0.015)^20 ≈ 2000 × 1.34885 = 2,697.70 (approx)
+			</div>
+		</section>
+
+		<section>
+			<h2>Effective Annual Rate (EAR)</h2>
+			<div class="formula">EAR = (1 + r/n)^(n) − 1</div>
+			<div class="example"><strong>Example:</strong> 6% compounded monthly → EAR = (1 + 0.06/12)^12 − 1 ≈ 0.061678 = 6.1678%</div>
+		</section>
+
+		<section>
+			<h2>Solving for Unknowns</h2>
+			<h3>Find Principal (P)</h3>
+			<div class="formula">P = A ÷ (1 + r/n)^(n×t)</div>
+
+			<h3>Find Rate (r)</h3>
+			<div class="formula">r = n × ( (A/P)^(1/(n×t)) − 1 )</div>
+
+			<h3>Find Time (t)</h3>
+			<div class="formula">t = [ ln(A/P) ] ÷ [ n × ln(1 + r/n) ]
+			<br>For continuous compounding: t = ln(A/P) ÷ r</div>
+		</section>
+
+		<section>
+			<h2>Common Compounding Frequencies</h2>
+			<table>
+				<tr><th>Frequency</th><th>n (per year)</th></tr>
+				<tr><td>Annually</td><td>1</td></tr>
+				<tr><td>Semi-annually</td><td>2</td></tr>
+				<tr><td>Quarterly</td><td>4</td></tr>
+				<tr><td>Monthly</td><td>12</td></tr>
+				<tr><td>Daily (approx)</td><td>365</td></tr>
+				<tr><td>Continuous</td><td>∞ (use continuous formula)</td></tr>
+			</table>
+		</section>
+
+		<section>
+			<h2>Practical Tips</h2>
+			<ul>
+				<li><strong>Compare EAR:</strong> Use the Effective Annual Rate to compare different compounding schedules.</li>
+				<li><strong>Frequent compounding:</strong> More frequent compounding increases the final amount for the same nominal rate.</li>
+				<li><strong>Continuous compounding:</strong> Represents the theoretical limit as n → ∞ and is useful for calculus-based finance.</li>
+				<li><strong>Use logs:</strong> When solving for time or rate, logarithms are required.</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Real-World Applications</h2>
+			<ul>
+				<li><strong>Savings accounts:</strong> Banks compound interest on deposits</li>
+				<li><strong>Investments:</strong> Mutual funds and reinvested dividends compound returns</li>
+				<li><strong>Loans & mortgages:</strong> Interest compounding affects total repayment amounts</li>
+				<li><strong>Bonds:</strong> Certain bonds compound periodically or pay periodic coupons</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Quick Reference</h2>
+			<table>
+				<tr><th>Symbol</th><th>Definition</th></tr>
+				<tr><td>P</td><td>Principal (initial amount)</td></tr>
+				<tr><td>r</td><td>Nominal annual rate (decimal)</td></tr>
+				<tr><td>n</td><td>Compounding periods per year</td></tr>
+				<tr><td>t</td><td>Time in years</td></tr>
+				<tr><td>A</td><td>Amount after t years</td></tr>
+			</table>
+		</section>
+	</div>
+
+	<footer>
+		<p>&copy; 2026 Mathematics Learning Hub - Compound Interest Guide</p>
+	</footer>
+</body>
+</html>
+

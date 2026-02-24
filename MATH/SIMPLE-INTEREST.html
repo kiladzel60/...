@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Simple Interest - General Information</title>
+	<style>
+		* {margin: 0;
+		   padding: 0;
+		   box-sizing: border-box;}
+        body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			  line-height: 1.6;
+			  color: #524513;
+			  background: linear-gradient(135deg, #eaea66 0%, #a29c4b 100%);
+			  min-height: 100vh;};
+        nav {background-color: rgba(124, 79, 12, 0.8);
+			 padding: 1rem 0;
+			 position: sticky;
+			 top: 0;
+			 z-index: 100;}
+        nav a {color: #8d8961;
+			   text-decoration: none;
+			   padding: 0.5rem 1.5rem;
+			   margin: 0 0.5rem;
+			   display: inline-block;
+			   border-radius: 4px;
+			   transition: background-color 0.3s;}
+        nav a:hover {background-color: #cac47e;}
+        header {background-color: #fff;
+			    padding: 2rem;
+			    text-align: center;
+			    box-shadow: 0 2px 10px rgba(243, 236, 104, 0.1);}
+        header h1 {color: #aaa847;
+			       font-size: 2.5rem;
+			       margin-bottom: 0.5rem;}
+        header p {color: #887b42;
+			      font-size: 1.1rem;}
+        .container {max-width: 1000px;
+			        margin: 2rem auto;
+			        padding: 0 1rem;}
+        section {background-color: #ded197;
+			     margin-bottom: 2rem;
+			     padding: 2rem;
+			     border-radius: 8px;
+			     box-shadow: 0 2px 10px rgba(135, 125, 9, 0.1);}
+        section h2 {color: #655e2e;
+			        margin-bottom: 1rem;
+			        border-bottom: 3px solid #eacb66;
+			        padding-bottom: 0.5rem;}
+        section h3 {color: #a2934b;
+			        margin-top: 1.5rem;
+			        margin-bottom: 0.5rem;}
+        .formula {background-color: #a99b72;
+			      padding: 1rem;
+			      border-left: 4px solid #eae866;
+                  margin: 1rem 0;
+                  font-family: 'Courier New', monospace;
+                  font-size: 1.5rem;
+                  overflow-x: auto;}
+        .example {background-color: #c2b785;
+			      padding: 1rem;
+			      border-left: 4px solid #a2964b;
+			      margin: 1rem 0;
+			      border-radius: 4px;}
+        .example strong {color: #a29b4b;}
+        ul, ol {margin-left: 2rem;
+			    margin-top: 0.5rem;
+			    margin-bottom: 1rem;}
+        li {margin-bottom: 0.5rem;}
+        table {width: 100%;
+			   border-collapse: collapse;
+			   margin: 1rem 0;}
+        table th, table td {border: 1px solid #d8ca88;
+			                padding: 0.75rem;
+			                text-align: left;}
+        table th {background-color: #eaea66;
+			      color: rgb(195, 181, 111);}
+        
+		table tr:nth-child(even) {background-color: #dfd8a1;}
+        
+		footer {background-color: rgba(121, 118, 61, 0.8);
+			    color: #fff;
+                text-align: center;
+                padding: 1.5rem;
+			    margin-top: 2rem;}
+	</style>
+</head>
+<body>
+	<nav>
+		<a href="PERCENTAGES.html">Percentages</a>
+		<a href="SIMPLE-INTEREST.html">Simple Interest</a>
+		<a href="COMPOUND-INTEREST.html">Compound Interest</a>
+	</nav>
+
+	<header>
+		<h1>General Information About Simple Interest</h1>
+		<p>Simple interest fundamentals: calculate interest using principal, rate, and time</p>
+	</header>
+
+	<div class="container">
+		<section>
+			<h2>What Is Simple Interest?</h2>
+			<p>Simple interest is interest calculated only on the principal amount of a loan or deposit. It does not compound; the interest for each period is based solely on the original principal.</p>
+			<p style="margin-top: 1rem;">Simple interest is commonly used for short-term loans, certain bonds, and basic interest calculations.</p>
+		</section>
+
+		<section>
+			<h2>Key Formula</h2>
+			<h3>Simple Interest (SI)</h3>
+			<div class="formula">SI = P × r × t
+			<br>where P = principal, r = annual rate (decimal), t = time (years)</div>
+
+			<h3>Total Amount (A)</h3>
+			<div class="formula">A = P + SI = P × (1 + r × t)</div>
+
+			<div class="example">
+				<strong>Example:</strong> If you invest $1,000 at 5% per year for 3 years (simple interest):<br>
+				SI = 1000 × 0.05 × 3 = 150<br>
+				Total = 1000 + 150 = 1,150
+			</div>
+		</section>
+
+		<section>
+			<h2>Solving for Unknowns</h2>
+			<h3>Find Principal (P)</h3>
+			<div class="formula">P = SI ÷ (r × t)</div>
+			<div class="example"><strong>Example:</strong> Interest earned $180 at 6% for 2 years: P = 180 ÷ (0.06 × 2) = 180 ÷ 0.12 = 1,500</div>
+
+			<h3>Find Rate (r)</h3>
+			<div class="formula">r = SI ÷ (P × t)</div>
+			<div class="example"><strong>Example:</strong> $90 interest on $600 for 3 years: r = 90 ÷ (600 × 3) = 90 ÷ 1800 = 0.05 = 5%</div>
+
+			<h3>Find Time (t)</h3>
+			<div class="formula">t = SI ÷ (P × r)</div>
+			<div class="example"><strong>Example:</strong> $200 interest on $2,000 at 4%: t = 200 ÷ (2000 × 0.04) = 200 ÷ 80 = 2.5 years</div>
+		</section>
+
+		<section>
+			<h2>Common Variations</h2>
+			<ul>
+				<li><strong>Different time units:</strong> If time is given in months, convert to years: t (years) = months ÷ 12</li>
+				<li><strong>Rate as percentage:</strong> Convert percent to decimal before using formula (e.g., 7% → 0.07)</li>
+				<li><strong>Short-term loans:</strong> Many short loans use simple interest for ease of calculation</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Real-World Applications</h2>
+			<ul>
+				<li><strong>Personal loans:</strong> Some lenders charge simple interest for short-term borrowing</li>
+				<li><strong>Bonds & bills:</strong> Certain fixed-income instruments use simple interest</li>
+				<li><strong>Insurance and fees:</strong> Easy estimates for prorated interest amounts</li>
+				<li><strong>Quick estimates:</strong> Use simple interest for approximate growth over short periods</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Quick Reference</h2>
+			<table>
+				<tr>
+					<th>Variable</th>
+					<th>Meaning</th>
+				</tr>
+				<tr>
+					<td>P</td>
+					<td>Principal (initial amount)</td>
+				</tr>
+				<tr>
+					<td>r</td>
+					<td>Annual interest rate (decimal)</td>
+				</tr>
+				<tr>
+					<td>t</td>
+					<td>Time period in years</td>
+				</tr>
+				<tr>
+					<td>SI</td>
+					<td>Simple Interest = P × r × t</td>
+				</tr>
+				<tr>
+					<td>A</td>
+					<td>Total Amount = P + SI</td>
+				</tr>
+			</table>
+		</section>
+
+		<section>
+			<h2>Tips</h2>
+			<ul>
+				<li><strong>Convert rates:</strong> Always convert percentages to decimals before using the formula</li>
+				<li><strong>Match time units:</strong> Ensure the rate period and time units align (e.g., annual rate with years)</li>
+				<li><strong>Short vs long term:</strong> Use simple interest for short durations; use compound interest for longer-term growth</li>
+			</ul>
+		</section>
+	</div>
+
+	<footer>
+		<p>&copy; 2026 Mathematics Learning Hub - Simple Interest Guide</p>
+	</footer>
+</body>
+</html>
+
